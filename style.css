@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+/* header style*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-size: 2000px;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    /* padding: 20px; */
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+a:hover{
+    cursor: pointer;
+
+
+}
+
+@media screen and (max-width:420px){
+    .nav{
+        display:none;
+    }
+}
+
+.touch{
+    padding: 5px 15px;
+    border: 1px solid #000000;
+    /* margin-right: 20px; */
+    border-radius: 6px;
+}
+
+/* Start main style*/
+main{
+    position: relative;
+    background-image: url("./image/city.jpg");
+    width: 100vw;
+    height: 70vh;
+    background-position: 0px -270px;
+    background-position: center;
+
+    filter:brightness(2) grayscale(.6);
+    box-shadow: inset 0px 120px 190px 30px black;
+    background-size: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: #451A94;
+    opacity: 60%;
+}
+.content{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    margin-left: 100px;
+    
+}
+.text1{
+    margin: 20px 0px;
+    max-width: 500px;
+    line-height: 1.5;
+    
+}
+
+/* footer style */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.icon{
+    display: flex;
+}
+.icon div{
+    padding: 10px 0px 10px 10px;
+    font-size: 22px;
+}
